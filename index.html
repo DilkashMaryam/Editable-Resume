@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <h1>Editable Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset>
+            <h1>PERSONAL INFORMATION</h1>
+            <h2>Name</h2>
+            <input type="text" id="name" placeholder="ENTER YOUR NAME" required> 
+            <h2>Email</h2>
+            <input type="email" id="email" placeholder="ENTER YOUR EMAIL" required>
+            <h2>Contact No</h2>
+            <input type="tel" id="contact" placeholder="TYPE YOUR NUMBER" required>
+            <h2>Gender</h2>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">FEMALE</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">MALE</label>
+            <h2>Portfolio Link</h2>
+            <input type="url" id="portfolio" placeholder="YOUR PORTFOLIO LINK" required>
+            <label for="profilePicture"><h2>Profile Picture</h2></label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+    </fieldset>
+
+    <fieldset>
+            <h1>SUMMARY</h1>
+            <h2>About you</h2>
+            <textarea id="summary" placeholder="TELL US ABOUT YOU" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+            <h1>EDUCATION</h1>
+             <textarea name="education" id="education" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+            <h1>SKILLS</h1>
+            <textarea id="skills" placeholder="WRITE YOUR SKILLS" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+            <h1>WORK EXPERIENCE</h1>
+            <textarea id="experience" placeholder="ADD YOUR EXPERIENCE" rows="4" required></textarea> 
+    </fieldset>
+
+    <button type="submit">SUBMIT FORM</button>
+    </form>
+
+    <div id="resumeOutput">
+        <!-- Resume Will Be Generated Below -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
